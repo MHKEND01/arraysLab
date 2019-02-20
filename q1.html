@@ -1,5 +1,19 @@
 <html>
   <body>
-    <script src="script.js"/>
+    <ul id="animalList">
+
+    </ul>
+
+    <script>
+    var animals = ["Aardvark", "Beetle", "Cat", "Dog", "Elephant"];
+    var animalList = document.getElementById('animalList');
+    animals.forEach(function(d)
+                   {
+                     var li = document.createElement('li');
+                     var animal = document.createTextNode(d);
+                     li.appendChild(animal);
+                     animalList.appendChild(li);
+                   });
+    </script>
   </body>
 </html>
